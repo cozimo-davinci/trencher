@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/trencher_website/static/css/main.bd07925c.css",
+    "main.js": "/trencher_website/static/js/main.10863917.js",
+    "index.html": "/trencher_website/index.html",
+    "main.bd07925c.css.map": "/trencher_website/static/css/main.bd07925c.css.map",
+    "main.10863917.js.map": "/trencher_website/static/js/main.10863917.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd07925c.css",
+    "static/js/main.10863917.js"
+  ]
+}
