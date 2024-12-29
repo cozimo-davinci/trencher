@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/trencher/static/css/main.bd07925c.css",
-    "main.js": "/trencher/static/js/main.10863917.js",
+    "main.js": "/trencher/static/js/main.68fd236d.js",
     "index.html": "/trencher/index.html",
     "main.bd07925c.css.map": "/trencher/static/css/main.bd07925c.css.map",
-    "main.10863917.js.map": "/trencher/static/js/main.10863917.js.map"
+    "main.68fd236d.js.map": "/trencher/static/js/main.68fd236d.js.map"
   },
   "entrypoints": [
     "static/css/main.bd07925c.css",
-    "static/js/main.10863917.js"
+    "static/js/main.68fd236d.js"
   ]
 }
