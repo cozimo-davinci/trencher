@@ -5,6 +5,10 @@ const App = () => {
 
   const [showTopButton, setShowTopButton] = useState(false);
 
+  useEffect(() => {
+    document.title = "Trencher";
+  }, []);
+
 
   // Smooth scroll to footer
   const scrollToFooter = () => {
@@ -18,6 +22,7 @@ const App = () => {
       behavior: "smooth",
     });
   };
+
 
   // Show the actual button 
   useEffect(() => {
@@ -61,23 +66,52 @@ const App = () => {
       {/* Header Section */}
       <header className="text-center py-10">
         <img
-          src="/img/mishgan.png"
+          src={`${process.env.PUBLIC_URL}/img/mishgan.png`}
           alt="$MISHGAN"
           className="w-96 h-96 mx-auto 
           rounded-full border-white border-4 mt-4
           hover:scale-110 hover:shadow-xl hover:shadow-green-400"
         />
-        <h1 className="text-4xl font-bold mt-6">$MISHGAN TRENCHER</h1>
+        <h1 className="text-4xl text-red-600 font-extrabold mt-6">$MISHGAN TRENCHER</h1>
 
-        <h2 className='text-3xl font-bold mt-4'>Disclaimer</h2>
-        <p className='mt-4 text-2xl font-semibold bg-slate-600 
-        rounded-lg border-2 border-white hover:scale-105 w-80 mx-auto hover:shadow-2xl hover:shadow-green-500'>
-          Developer will airdrop his all tokens to the community.
-          In order to get them, please go to our twitter account and raid the pinned post.
+        <h2 className='text-3xl font-bold mt-8'>IMPORTANT DISCLAIMER</h2>
+        <p className='mt-10 text-2xl font-semibold bg-slate-800 
+        rounded-lg border-2 border-white hover:scale-105 w-4/5 mx-auto hover:shadow-2xl hover:shadow-green-500 p-6 leading-relaxed'>
+          <strong className='text-purple-700'>As a blockchain enthusiast,</strong> I've been disappointed with the current state of meme coins.
+          That's why I've launched this project – to set a new standard and potentially make history.
+
+          <h3 className='text-purple-600 text-3xl mt-6'>Behind the Scenes:</h3>
+          <ul className='list-disc list-inside ml-6 mt-4'>
+            <li><strong className='text-yellow-400'>Developer Commitment:</strong> I will purchase the token at $1, showing my faith in the project.</li>
+            <li><strong className='text-yellow-400'>Airdrop:</strong> All my holdings will be airdropped to the community via our X account to foster a fair distribution.</li>
+            <li><strong className='text-yellow-400'>No Bots:</strong> There will be no use of sniper or market-making bots to manipulate the market.</li>
+            <li><strong className='text-yellow-400'>Personal Responsibility:</strong> I am not responsible for your investment outcomes; your decisions drive your results.</li>
+            <li><strong className='text-yellow-400'>Community-Driven:</strong> I'm just a developer with a vision to improve this market through collective action.</li>
+          </ul>
+
+          <h3 className='text-purple-600 text-3xl mt-6'>Project Goals:</h3>
+          <ul className='list-disc list-inside ml-6 mt-4'>
+            <li><strong className='text-yellow-400'>Historical Impact:</strong> Like Dogecoin and Shiba Inu, our aim is to demonstrate the power of community in reaching a $1B+ market cap or more.</li>
+            <li><strong className='text-yellow-400'>Blockchain's Potential:</strong> We want to showcase what's possible with blockchain technology through collective effort.</li>
+          </ul>
+
+          <h3 className='text-purple-600 text-3xl mt-6'>Final Thoughts:</h3>
+          <ul className='list-disc list-inside ml-6 mt-4'>
+            <li><strong className='text-yellow-400'>Community Power:</strong> The success of this token depends on the power of the community.</li>
+            <li><strong className='text-yellow-400'>Investment Caution:</strong> If you're not in it for the long haul or lack conviction, please reconsider investing in this token.</li>
+          </ul>
+
+          <h3 className='text-purple-600 text-3xl mt-6'>How to Participate:</h3>
+          <p className='mt-4'>
+            <strong className='text-yellow-400'>Airdrop Opportunity:</strong> To receive the airdrop, engage with our pinned post on our official X account.
+          </p>
+
+          <p className='text-center mt-6 text-orange-600 text-2xl font-extrabold'>S.O.R.T.E.D</p>
         </p>
+
         <h3 className='text-3xl font-bold mt-10 text-cyan-500'>Twitter Instructions</h3>
-        <p className='mt-4 text-2xl font-semibold bg-slate-600 
-        rounded-lg border-2 border-white hover:scale-105 w-80 mx-auto hover:shadow-2xl hover:shadow-green-500'>
+        <p className='mt-4 text-2xl font-semibold bg-slate-800 
+        rounded-lg border-2 border-white hover:scale-105 w-1/3 mx-auto hover:shadow-2xl hover:shadow-green-500'>
           Follow the page, drop your Wallet Address in the comments, Retweet & Like
         </p>
         <p className='text-4xl font-extrabold mt-8 text-orange-600'>$$$ GOOD LUCK TRENCHING $$$</p>
@@ -92,11 +126,12 @@ const App = () => {
         {/* First Image & Text */}
         <div className="flex flex-row items-center max-w-4xl w-full">
           <img
-            src="/img/2_decisions.png"
+            src={`${process.env.PUBLIC_URL}/img/2_decisions.png`}
             alt="Side Left"
             className="w-96 h-auto animate-fadeIn hover:scale-110 hover:shadow-2xl hover:shadow-green-500"
           />
-          <p className="text-left ml-10 max-w-md text-2xl font-semibold">
+          <p className="text-left ml-10 max-w-md text-2xl font-semibold hover:scale-105
+          hover:shadow-lg hover:shadow-green-400 hover:border-white hover:border-2 hover:rounded-lg">
             <span className="text-purple-600 text-3xl">Yo</span>, this meme coin? It's the ultimate grindlord of the meme coin fam, out here hustling harder than a gamer on a no-sleep raid for those fat stacks of cash. Picture this: our dude's living in the trenches, but not the war kind, the meme kind - where every day is a battle for the biggest bag. They're in it, grinding like there's no tomorrow, turning every meme into a money-making machine. We're talking 24/7, no breaks, just pure dedication to the art of stacking them coins.
           </p>
         </div>
@@ -104,11 +139,13 @@ const App = () => {
         {/* Second Image & Text */}
         <div className="flex flex-row-reverse items-center max-w-4xl w-full mt-14">
           <img
-            src="/img/room_suggestion_meme.png"
+            src={`${process.env.PUBLIC_URL}/img/room_suggestion_meme.png`}
             alt="Side Right"
             className="w-96 h-auto animate-fadeIn border-white border-4 mt-12 hover:scale-110 hover:shadow-2xl hover:shadow-green-500"
           />
-          <p className="text-right mr-10 max-w-md text-2xl font-semibold">
+          <p className="text-right mr-10 max-w-md text-2xl font-semibold
+          hover:scale-105
+          hover:shadow-lg hover:shadow-green-400 hover:border-white hover:border-2 hover:rounded-lg">
             <span className="text-purple-600 text-3xl">This ain't your average Joe;</span> this is the meme coin warrior, the unsung hero of the crypto trenches. They've got memes on lock, and their wallet's getting fatter by the minute. Forget about the 9-5, this is the life of a meme coin mogul, where every post could be the one that blows up. So, if you're down for the grind, join the meme coin trenches - it's where legends are made, and wallets get filled!
           </p>
         </div>
