@@ -82,7 +82,7 @@ const App = () => {
 
           <h3 className='text-purple-600 text-3xl mt-6'>Behind the Scenes:</h3>
           <ul className='list-disc list-inside ml-6 mt-4'>
-            <li><strong className='text-yellow-400'>Developer Commitment:</strong> I will purchase the token at $1, showing my faith in the project.</li>
+            <li><strong className='text-yellow-400'>Developer Commitment:</strong> I will purchase the token at around $10, showing my faith in the project.</li>
             <li><strong className='text-yellow-400'>Airdrop:</strong> All my holdings will be airdropped to the community via our X account to foster a fair distribution.</li>
             <li><strong className='text-yellow-400'>No Bots:</strong> There will be no use of sniper or market-making bots to manipulate the market.</li>
             <li><strong className='text-yellow-400'>Personal Responsibility:</strong> I am not responsible for your investment outcomes; your decisions drive your results.</li>
