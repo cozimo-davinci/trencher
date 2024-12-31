@@ -158,10 +158,10 @@ const App = () => {
         className="text-center py-6 bg-gray-900 text-green-400 mt-10 border-t-2"
       >
         <p className='font-bold text-2xl'>
-          Token Contract Address: <span className="text-purple-400">TBA...</span>
+          Token Contract Address: <span className="text-purple-400">Cq8ntRhxd3G6FVjDyiVf4m3ays1VRGvtCH8hPMM3pump</span>
         </p>
         <a
-          href="https://buy-meme-coin.com"
+          href="https://pump.fun/coin/Cq8ntRhxd3G6FVjDyiVf4m3ays1VRGvtCH8hPMM3pump"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block
@@ -171,6 +171,19 @@ const App = () => {
            hover:border-black"
         >
           Buy it on <span className='font-extrabold text-emerald-500'>Pump.fun</span>
+        </a>
+
+        <a
+          href="https://neo.bullx.io/terminal?chainId=1399811149&address=Cq8ntRhxd3G6FVjDyiVf4m3ays1VRGvtCH8hPMM3pump"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block
+           bg-purple-700 text-black 
+           py-2 px-4 font-bold border-white border-2 rounded-lg mt-4 hover:bg-purple-800
+           hover:text-white hover:scale-105 hover:shadow-md hover:shadow-green-400
+           hover:border-black"
+        >
+          Buy it on <span className='font-extrabold text-emerald-500'>BullX NEO</span>
         </a>
 
         <p className='text-xl font-semibold mt-6'>Copyright © Deciphered Enigma. All rights reserved.</p>
